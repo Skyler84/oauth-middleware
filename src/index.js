@@ -1,12 +1,11 @@
 import Express from 'express'
 import * as cors from 'cors'
 
-
 const HOST=process.env.HOST || "0.0.0.0"
 const PORT=process.env.PORT || 8000
 
 let app = Express()
-app.use(cors())
+app.use(cors.default())
 
 let authorizations = {};
 
